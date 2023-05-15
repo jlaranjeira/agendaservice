@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto' sans-serif;
+}
+
+.email{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.conf-email{
+    display: flex;
+    width: 400px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'roboto';
+    border: none;
+    box-shadow: 0px 0px 5px 2px rgb(168, 167, 168);
+}
+
+.conf-header h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.cont-email h2{
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(55,136,216);
+}
+
+.cont-email-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.cont-email-p img{
+    
+    margin-right: 5px;
+}
+
+.cont-email-end {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.cont-email-end img{
+    margin-right: 5px;
+}
+
+.btn-email{
+    background-color: rgb(55,136,216);
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: #ffffff;
+}
+
+.btn-email:hover{
+    background-color: rgb(30, 95, 161);
+    font-weight: 600;
+}
+
+
+

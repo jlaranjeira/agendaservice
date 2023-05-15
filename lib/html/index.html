@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pb-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/html/style.css">
+    <title>Agenda</title>
+</head>
+<body>
+
+    <main>
+
+        <header>
+            <h1>Agenda de Serviços</h1>
+        </header>
+
+        <section class="section-1">
+            <div class="col-1">
+                <h1>Coluna 1</h1>
+                
+            </div>
+            <div class="col-2">
+                <h1>Coluna 1</h1>
+                
+                
+                
+            </div>
+            <div class="col-3">
+                <h1>Horário</h1>
+                
+
+                <button type="button" data-container="time-button" data-time="9:00" class="time-button" class="time-button">9:00</button>
+
+                <button type="button" data-container="time-button" data-time="10:00" class="time-button" class="time-button">10:00</button>
+
+                <button type="button" data-container="time-button" data-time="12:00" class="time-button" class="time-button">12:00</button>
+
+            </div>
+
+        </section>
+
+        
+    </main>
+                <script>
+                    document.querySelectorAll('button').forEach(btn=>{
+                        console.log(btn.dataset.time);
+                        btn.addEventListener("click", function(){
+                            console.log(btn.dataset.time);
+                        })
+                    });
+                        
+                            
+
+                                           
+                </script>
+    
+</body>
+</html>

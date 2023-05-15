@@ -1,0 +1,17 @@
+{
+    "name": "agenda/service",
+    "description": "Agenda para serviços",
+    "authors": [
+        {
+            "name": "Grupo33AdmSenac",
+            "email": "jlaranjeira@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "../../class",
+            "Models\\": "../../model"
+        }
+    }
+}

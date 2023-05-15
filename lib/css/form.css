@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto' sans-serif;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+form {
+    box-shadow: 0px 0px 5px 3px rgba(206, 205, 205, 0.75);
+    width: 400px;
+    background-color: rgb(236, 238, 245);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'roboto';
+    
+}
+
+form h2{
+    font-size: 20px;
+}
+
+
+label {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: rgb(10, 10, 10);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input, textarea, select{
+    padding: 8px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-form h2{
+    margin-bottom: 15px;
+    color: rgb(44,84,228);
+    font-weight: 900;
+    font-family: 'roboto';
+
+}
+
+.date{
+    display: none;
+}
+
+.time{
+    display: none;
+}
+
+textarea{
+    margin-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+    background-color: #FDF59C;
+}
+
+.btn-formAdd{
+    display: flex;
+    justify-content: right;
+}
+
+.btn-form {
+    width: 100px;
+    padding: 12px 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(7, 167, 20);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn-form:hover {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.btn-salvar{
+    display: flex;
+    background-color: rgb(5, 160, 18);
+    justify-content:center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.btn-salvar:hover {
+    background-color: rgb(3, 143, 15);
+}
+
+
+.btn-cancelar{
+    display: flex;
+    background-color:rgb(233, 25, 25);
+    justify-content:center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.btn-cancelar:hover{
+    background-color: rgb(185, 3, 3)
+}
+
+.btn-cancelar img, .btn-salvar img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    
+}
+
+.btn-agendar{
+    display: flex;
+    background-color: rgb(5, 160, 18);
+    justify-content:center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    margin-right: 5px;
+}
+
+.btn-agendar:hover{
+    
+    background-color: rgb(3, 143, 15);
+    
+}
+
+
+/*Responsividade*/
+
+@media screen and (max-width: 500px) {
+    .formAdd{
+        width: 300px;
+    }
+
+    .formEdit {
+        width: 200px;
+    }
+
+    .cancelar{
+        width: 50px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .delete{
+        width: 150px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
+
+/*Estilo formulário Alterar-Excluir*/
+
+.formEdit {
+    
+    width: 400px;
+    background-color: rgb(229,233,246);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'roboto';
+    
+}
+
+.delete{
+    display: flex;
+    background-color: rgb(233, 25, 25);
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.delete img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    
+}
+
+.delete:hover {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.btn-edit{
+    display: flex;
+    justify-content:right;
+    
+}
+
+.cancelar{
+    display: flex;
+    background-color: rgb(233, 25, 25);
+    justify-content:center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.cancelar img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    
+}
+
+.cancelar:hover {
+    background-color: rgb(185, 3, 3);
+}
+
+i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+
